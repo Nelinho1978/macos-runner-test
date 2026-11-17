@@ -1,0 +1,8 @@
+name: Smoke Mac
+on: workflow_dispatch
+jobs:
+  smoke:
+    runs-on: macos-13
+    steps:
+      - run: sw_vers; xcodebuild -version | head -3
+
